@@ -1,0 +1,576 @@
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+li {
+ display: inline-block;
+}
+a {
+ color: #42b903;
+}
+
+h3{
+  line-height: 1.5em;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;	
+}
+
+/*Buttons*/
+#YesBtn {
+  padding: 12px 40px;
+  background: #FFFFFF!important;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2);
+		  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #00A657!important;
+  z-index: 999;
+}
+
+#YesBtn:hover {
+  color: #FFFFFF!important;
+  background-color: #21C66D!important;
+}
+
+
+#NoBtn {
+  padding: 12px 40px;	
+  background: #FFFFFF!important;;;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2);;;
+		  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #00A657!important;
+  z-index: 1000;
+}
+
+#NoBtn:hover {
+  color: #FFFFFF!important;
+  background-color: #21C66D!important;
+}
+
+
+#outputBtn{
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: space-evenly;
+	  -ms-flex-pack: space-evenly;
+		  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+
+#startBtn {
+  color:#00A657!important;; 
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+	  -ms-flex-direction: row;
+		  flex-direction: row;
+  padding: 12px 40px;
+  text-align: center;;
+  position: absolute;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-top: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  top: 225.34px;
+  background: #FFFFFF!important;;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2);;
+		  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+#startBtn:hover {
+  color:#FFFFFF!important;;
+  background-color: #21C66D!important;
+}
+
+#startOver {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 40px;	
+  width: 170px;
+  height: 50px;
+  background: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;	
+  font-weight: bold;
+  font-size: 16px;
+  color: #00A657;  
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2);  
+		  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#startOver:hover {
+  color: #FFFFFF!important;
+  background-color: #21C66D!important;
+}
+
+/*Result of game*/
+#gameResult {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 40px;	
+  width: 170px;
+  height: 50px;
+  background: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;	
+  font-weight: bold;
+  font-size: 16px;
+  color: #E68A00;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2);
+		  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#gameResult:hover {
+  color: #FFFFFF!important;;
+  background-color: #E68A00!important;;
+}
+
+
+#horizontalOutput{
+  -webkit-box-flex: 1;
+	  -ms-flex: 1 1 auto;
+		  flex: 1 1 auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+	  -ms-flex-pack: space-evenly;
+		  justify-content: space-evenly;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding: 20px;	
+}
+
+
+#vertical{
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+	  -ms-flex-direction: column;
+		  flex-direction: column;
+  -webkit-box-align: center;
+	  -ms-flex-align: center;
+		  align-items: center;
+}
+
+.item {
+  margin-bottom: 20px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+	  -ms-flex-direction: column;
+		  flex-direction: column;
+  -webkit-box-align: center;
+	  -ms-flex-align: center;
+		  align-items: center;	
+}
+
+
+.img-result {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+#imgFrame {
+	width: 80%;
+}
+
+
+#line {
+  width: 2px;
+  margin-left: 10px;
+  height: auto;
+  z-index: 999;
+  background: #F2F2F2;
+}
+
+
+/*Card front*/
+#gameh1 {
+  position: absolute;
+  width: 100%;
+  top: 16.65px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+}
+
+
+#info {
+  position: absolute;
+  width: 100%;
+  height: 46px;
+  top: 140px;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.5em;
+  color: #FFFFFF;
+
+}
+
+#headingGame{
+  line-height: 1.5em;
+  color:  #000000;
+  text-align: left;
+  margin-bottom:0px;
+}
+
+#aboutGame {
+  min-height: 105px;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+
+#dice {
+  position: absolute;
+  right: 44.32%;
+  top: 28.67%;
+  bottom: 50.33%;
+}
+
+/*Card back*/
+#dice-back {
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);filter: brightness(0) invert(1);
+}
+
+#divWpVue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+  border-radius: 3px;
+}
+
+#form-game {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	position:relative;
+	width: 90%;
+	background-color: rgba(241, 238, 238, 0.438);
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 0px 26px 1px rgba(0,0,0,0.38); 
+	box-shadow: 0px 0px 26px 1px rgba(0,0,0,0.38);
+	-webkit-transition: -webkit-transform 0.6s;
+	transition: -webkit-transform 0.6s;
+	-o-transition: transform 0.6s;
+	transition: transform 0.6s;
+	transition: transform 0.6s, -webkit-transform 0.6s;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+			perspective: 1000px;
+	position: relative;
+	min-height: 300px;
+	background-color:#00A657;
+  }
+
+/*Flip card animation*/
+.flip-rotate {
+  -webkit-transform: rotateY(180deg);
+		  transform: rotateY(180deg);
+  height: 100%;
+}
+
+.flip-card-front, .flip-card-back {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+		  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  left: 0px;
+  top: 0px;	
+  border-radius: 6px;
+  background-color:#00A657;
+}
+
+.flip-card-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+	  -ms-flex-direction: column;
+		  flex-direction: column;
+  padding-top: 40px;
+  -webkit-box-align: center;
+	  -ms-flex-align: center;
+		  align-items: center;
+  -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+  
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #horizontal {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-pack: space-evenly;
+		  -ms-flex-pack: space-evenly;
+			  justify-content: space-evenly;
+	  width: 100%;
+  }
+
+  #form-game {
+	  width: 100%;
+  }
+
+  #gameh1 {
+	  font-size: 30px;
+	  text-align: center;
+	  left: 0px;
+  }
+
+  #info {
+	  font-size: 16px;
+	  left: 0px;
+	  padding: 10px;
+	  text-align: center;
+  }
+
+  .flip-card-front {
+	  width: 100%;
+  }
+
+  #dice {
+	  left: 0px;
+	  right: 0px;
+	  margin-right: auto;
+	  margin-left: auto;
+	  display: block;
+  }
+
+  h2 {
+	  font-size: 23px;
+  }
+
+  #horizontalOutput {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+		  -ms-flex-direction: column;
+			  flex-direction: column;
+  }
+
+  .img-result {
+	  margin-right: auto;
+	  margin-left: auto;
+	  display: block;
+	  margin-bottom: 10px;
+	  width: 80%;
+  }
+
+  #item {
+	  padding: 20px;
+  }
+
+  #outputBtn {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+		  -ms-flex-direction: column;
+			  flex-direction: column;
+	  -webkit-box-align: center;
+		  -ms-flex-align: center;
+			  align-items: center;
+  }
+
+  #startOver {
+	  margin-bottom: 20px;
+  }
+
+}
+
+
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+  #horizontal {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-pack: space-evenly;
+		  -ms-flex-pack: space-evenly;
+			  justify-content: space-evenly;
+  }
+
+  #form-game {
+	  width: 100%;
+  }
+
+  .flip-card-front {
+	  width: 100%;
+  }
+
+  #info {
+	  font-size: 16px;
+	  left: 0px;
+	  padding: 10px;
+	  text-align: center;
+  }
+
+  #dice {
+	  left: 0px;
+	  right: 0px;
+	  margin-right: auto;
+	  margin-left: auto;
+	  display: block;
+  }
+
+  #gameh1 {
+	  font-size: 35px;
+	  text-align: center;
+	  left: 0px;
+  }
+
+  #horizontalOutput {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+		  -ms-flex-direction: column;
+			  flex-direction: column;
+  }
+
+  .img-result {
+	  margin-right: auto;
+	  margin-left: auto;
+	  display: block;
+	  margin-bottom: 10px;
+	  width: 70%;
+  } 
+}
+
+/* 
+##Device = Tablets, Ipads (portrait)
+##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #horizontal {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-pack: space-evenly;
+		  -ms-flex-pack: space-evenly;
+			  justify-content: space-evenly;
+	  width: 60%;
+  }
+
+}
+
+/* 
+##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1023px
+*/ 
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  
+  #horizontal {
+	  display: -webkit-box;
+	  display: -ms-flexbox;
+	  display: flex;
+	  -webkit-box-pack: space-evenly;
+		  -ms-flex-pack: space-evenly;
+			  justify-content: space-evenly;
+  }
+  
+  
+}
+
+
+/* 
+##Device = Laptops, Desktops
+##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1024px) and (max-width: 1280px) {
+  #horizontalOutput {
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+		  -ms-flex-direction: column;
+			  flex-direction: column;
+  }
+
+  .img-result {
+	  margin-right: auto;
+	  margin-left: auto;
+	  display: block;
+	  margin-bottom: 10px;
+	  width: 70%;
+  }
+
+  
+}
+
+
+
+
+
